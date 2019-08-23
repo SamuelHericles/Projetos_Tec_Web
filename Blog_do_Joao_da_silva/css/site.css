@@ -1,14 +1,36 @@
 main h1{	
-    font-family: "Times New Roman","Open Sans","Arial",serif,sans-serif;
-    font-size: 30px;
+    font-family: "Arial",sans-serif;
     color: #FFF;
     background-color: rgb(120,30,60);
     text-decoration: none;
     /*padding: 16px;para os 4 lados*/
+    padding: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
     margin: 0px;
     text-align: center;
+    border-bottom : 10px solid #000;
+}
+
+h2 {
+    font-size: 30px;
+}
+ 
+h1{
+    font-size: 50px;
+}
+
+p{
+    text-align: justify;
+    margin: 20px 0px;
+}
+
+strong{
+    font-weight: bold;
+}
+
+em{
+    font-style: italic;
 }
 
 footer{
@@ -22,18 +44,15 @@ title{
 }
 
 nav{
-    text-align: center;
     padding: 20px;
 }
 
 body{
     font-family: "Times New Roman";
     margin: 0px;
+    text-align: justify;
 }
 
-h2 {
-    font-size: 120%;
-}
 
 /*#cit1{
     background-color: #d9e5e3;
@@ -47,7 +66,6 @@ blockquote{
     border: 10px outset #c2ccca;
     width: 300px;
     box-sizing: border-box;
-
 }
 
 p a{
@@ -56,10 +74,29 @@ p a{
 
 ul li a{
     /*color: black;*/
+    text-decoration: none;
     color: inherit;/*o pai de 'a' eh o 'li' e assim o pai do 'ul' eh o 'aside'*/
 }
 
 aside{
+    text-align: center;
     background-color: #3c1d3d;
     color: #f2fffc;
+}
+
+div{
+    width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul{
+    list-style-type: none;
+}
+
+footer p {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }

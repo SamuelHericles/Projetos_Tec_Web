@@ -30,7 +30,7 @@
 		+ a: link de sites ou de arquivos;
 		+ nav: parte do texto voltada para navegação, nada visualmente, mais semântica;
 		+ main: os navegadores procurando logo essa tag para busca mais rápida;
-		+&copy: simbolo de copyright;
+		+ &copy: simbolo de copyright;
 		+ blockquote: bloco de citações;
 		+ !DOCTYPE html: procura o html mais atual;
 		+ article: refenricar um artigo no site
@@ -77,49 +77,51 @@
 		<meta charset="utf-8">
 		<title>João da Silva</title>
 		<link rel="icon" href="../imagens/favicon.png">		
+		<link rel="stylesheet" href="../css/reset.css">
 		<link rel="stylesheet" href="../css/site.css">
 
 	</head>
 
 	<body>
 		<main>
+			<div>
+				<h1>João da Silva</h1>
+				<h2>Sobre mim</h2>
 
-			<h1>João da Silva</h1>
+					<p>Moro em São Paulo mas atendo clientes do mundo todo. Sou conhecido por fazer produtos de <em>qualidade</em>, durabilidade e que <em>agregam valor para meus clientes.</em>
+					Trabalho usando a web como plataforma, ou seja, respiro <strong>HTML5, CSS3 e JavaScript</strong> (ou melhor: ECMASCript). Crio sites para todos, seguindo as principais diretivas de acessibilidade, responsividade e web semântica, sem descuidar da qualidade de código.</p>
 
-			<h2>Sobre mim</h2>
+				<h2>Como trabalho</h2>
 
-				<p>Moro em São Paulo mas atendo clientes do mundo todo. Sou conhecido por fazer produtos de <em>qualidade</em>, durabilidade e que <em>agregam valor para meus clientes.</em>
-				Trabalho usando a web como plataforma, ou seja, respiro <strong>HTML5, CSS3 e JavaScript</strong> (ou melhor: ECMASCript). Crio sites para todos, seguindo as principais diretivas de acessibilidade, responsividade e web semântica, sem descuidar da qualidade de código.</p>
+					<blockquote>
 
-			<h2>Como trabalho</h2>
+						<p> João é o melhor desenvolvedor front-end com quem já trabalhei. Muito eficiente e muito capaz. Recomendo sem dúvidas!</p>
+							<cite>-- José Souza, Fiat<br></cite>
+					
+					</blockquote>
+					
+					<p>Satisfazer meus clientes é prioridade. Para isso, garanto um processo de desenvolvimento altamente interativo, baseado em feedback contínuo. Não trabalho com escopo fechado: o cliente é que decide quando o produto está pronto.</p>
 
-				<blockquote>
+					<p>Também não trabalho com prazos fechados: qualidade é importante demais para ser sacrificada.</p>
 
-					<p> João é o melhor desenvolvedor front-end com quem já trabalhei. Muito eficiente e muito capaz. Recomendo sem dúvidas!</p>
-					    <cite>-- José Souza, Fiat<br></cite>
-				
-				</blockquote>
-				
-				<p>Satisfazer meus clientes é prioridade. Para isso, garanto um processo de desenvolvimento altamente interativo, baseado em feedback contínuo. Não trabalho com escopo fechado: o cliente é que decide quando o produto está pronto.</p>
+				<h2>Experiência</h2>
 
-				<p>Também não trabalho com prazos fechados: qualidade é importante demais para ser sacrificada.</p>
+					<blockquote>
+					
+						<p>João domina as tecnologias como ninguém. Eu apresentava um problema, ele tinha na ponta da língua a solução mais adequada com as tecnologias mais recentes.</p>
+							<cite>-- Manoel Santos, Petrobrás<br></cite>
+					
+					</blockquote>
 
-			<h2>Experiência</h2>
-
-				<blockquote>
-				
-					<p>João domina as tecnologias como ninguém. Eu apresentava um problema, ele tinha na ponta da língua a solução mais adequada com as tecnologias mais recentes.</p>
-					    <cite>-- Manoel Santos, Petrobrás<br></cite>
-				
-				</blockquote>
-
-					<p>Já desenvolvi projetos para grandes empresas como <a href="http://www.bmw.com">BMW</a>, <a href="http://www.uol.com">UOL</a> e <a href="http://www.imbs.com">IBM</a>. Neles, o foco principal era entregar uma experiência imersiva e impactante para o usuário final sem descuidar do desempenho e da acessibilidade da página.
-						Também já fui contratado para transformar grandes portais, como Terra e G1, em páginas responsivas. Fui responsável por renovar o layout, reorganizar o conteúdo e re-escrever o código de forma mais reaproveitável.</p>
-							
-				<h2>Comunidade</h2>
-						<p>Procuro repassar meu conhecimento para a comunidade. Para isso, já dei diversas palestras e mantenho um blog.</p>
-						<img src="../imagens/eu.jpg" alt="Foto do João">		
-
+						<p>Já desenvolvi projetos para grandes empresas como <a href="http://www.bmw.com">BMW</a>, <a href="http://www.uol.com">UOL</a> e <a href="http://www.imbs.com">IBM</a>. Neles, o foco principal era entregar uma experiência imersiva e impactante para o usuário final sem descuidar do desempenho e da acessibilidade da página.
+							Também já fui contratado para transformar grandes portais, como Terra e G1, em páginas responsivas. Fui responsável por renovar o layout, reorganizar o conteúdo e re-escrever o código de forma mais reaproveitável.</p>
+								
+					<h2>Comunidade</h2>
+							<p>Procuro repassar meu conhecimento para a comunidade. Para isso, já dei diversas palestras e mantenho um blog.</p>
+		
+					</div>
+					
+			<img src="../imagens/eu.jpg" alt="Foto do João">		
 		</main>
 
 		<aside>	
@@ -127,15 +129,24 @@
 			<nav>
 				<ul>
 					<li><a href="../html/blog.html">Blog</a></li>
-					<li><a href="portifolio.html">Portifólio</a></li>
-					<li><a href="biografia.html">Biografia</a></li>
+					<li><a href="../html/portifolio.html">Portifólio</a></li>
+					<li><a href="../html/biografia.html">Biografia</a></li>
+					<li><a href="../html/contato.html">Contato</a></li>
 				</ul>
 			</nav>
+			<ul>
+				<li id="img"><a href="http:/github.com/joao-silva"><img src="../imagens/github.png"></a></li>
+				<li id="img"><a href="http:/linkedin.com/joao-silva"><img src="../imagens/linkedin.png"></a></li>
+				<li id="img"><a href="http:/twitter.com/joao-silva"><img src="../imagens/twitter.png"></a></li>
+
+			</ul>
 		</aside>
+
+
 
 		<footer>
 			<p>&copy Todo os direitos reservado a João da Silva</p>
 		</footer>
-		
+
 	</body>
 </html>
