@@ -11,6 +11,21 @@ main h1{
     text-align: center;
 }
 
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+title{
+    padding: 25px;
+}
+
+nav{
+    text-align: center;
+    padding: 20px;
+}
+
 body{
     font-family: "Times New Roman";
     margin: 0px;
@@ -26,11 +41,11 @@ h2 {
 
 blockquote{
     background-color: #f2f2f2;
-    padding: 10px;
+    padding: 20px;
     /*border: 10px solid #c2ccca;*/
     /*border: 10px dotted #c2ccca;*/
     border: 10px outset #c2ccca;
-    width: 250px;
+    width: 300px;
     box-sizing: border-box;
 
 }
