@@ -1,102 +1,166 @@
-main h1{	
-    font-family: "Arial",sans-serif;
-    color: #FFF;
-    background-color: rgb(120,30,60);
-    text-decoration: none;
-    /*padding: 16px;para os 4 lados*/
-    padding: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin: 0px;
-    text-align: center;
-    border-bottom : 10px solid #000;
-}
-
-h2 {
-    font-size: 30px;
-}
- 
-h1{
-    font-size: 50px;
-}
-
-p{
-    text-align: justify;
-    margin: 20px 0px;
-}
-
-strong{
-    font-weight: bold;
-}
-
-em{
-    font-style: italic;
-}
-
-footer{
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-title{
-    padding: 25px;
-}
-
-nav{
-    padding: 20px;
+main h1 {
+	font-family:"Arial", sans-serif;
+	background-color: rgb(120,30,60);
+	color: #ffffff;
+	padding: 25px;
+	margin: 0px;
+	text-align: center;
+	border-bottom: 10px solid black;
+	text-transform: uppercase;
 }
 
 body{
-    font-family: "Times New Roman";
-    margin: 0px;
-    text-align: justify;
+	font-family: "Times New Roman", serif;
+	text-align: justify;
+	margin: 0px;
+	line-height: 150%
 }
 
+.fiat{
+	float: right;
+	margin-left: 20px; 
+}
 
-/*#cit1{
-    background-color: #d9e5e3;
-}*/
+.petrobras{
+	float: left;
+	margin-right: 20px; 
+}
+
 
 blockquote{
-    background-color: #f2f2f2;
-    padding: 20px;
-    /*border: 10px solid #c2ccca;*/
-    /*border: 10px dotted #c2ccca;*/
-    border: 10px outset #c2ccca;
-    width: 300px;
-    box-sizing: border-box;
-}
-
-p a{
-    text-decoration: none;
+	background-color: #D9E5E3;
+	padding: 20px;
+	width: 300px;
+	border:10px solid #C2CCCA;
+	box-sizing: border-box;
+	text-align: justify;
+	margin: 20px 0px;
 }
 
 ul li a{
-    /*color: black;*/
-    text-decoration: none;
-    color: inherit;/*o pai de 'a' eh o 'li' e assim o pai do 'ul' eh o 'aside'*/
+	color: inherit;
+	text-decoration: none;
+}
+
+img{
+	float: right;
+	width: 300px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
 }
 
 aside{
-    text-align: center;
-    background-color: #3c1d3d;
-    color: #f2fffc;
+	background-color: #3C1D3D;
+	color: #F2FFFC;
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	float: right;
+	clear: right;
+	width: 15%;
+	position: relative;
+	top: 320px;
+}
+
+h2 {
+	font-size: 30px;
+	clear: both;
+}
+
+.titulo-aside{
+	font-size: 30px;
+}
+
+h1{
+	font-size: 50px;
+}
+
+p {
+	text-align: justify;
+	margin:20px 0px;
+}
+
+strong {
+	font-weight: bold;
+}
+
+em{
+	font-style: italic;
+}
+
+p a{
+	text-decoration: none;
+}
+
+nav{
+	padding: 20px;
+}
+
+footer{
+	background-color: black;
+	color: #FFF;
+	padding: 20px;
+	text-align: center;
+	clear: both;
+}
+
+
+title{
+	padding:25px;
 }
 
 div{
-    width: 720px;
-    margin-left: auto;
-    margin-right: auto;
+	width: 720px;
+	margin-left:auto;
+	margin-right:auto;
 }
 
-ul{
-    list-style-type: none;
+.container {
+	width: 720px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 10px
 }
 
-footer p {
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 20px;
+ul {
+	list-style-type: none;
+}
+
+
+cite{
+	font-style: italic;
+}
+
+.ul-bio li{
+	display: inline-block;
+}
+
+.ul-bio li a{
+	display: block;
+	height: 40px;
+	width: 40px;
+	text-indent: -9999px; 
+}
+
+
+.perfil	{
+	border: 10px solid black;
+}
+
+.github{
+	background-image: url(../imagens/github.png);
+}
+
+.twitter{
+	background-image: url(../imagens/twitter.png);
+}
+
+.linkedin{
+	background-image: url(../imagens/linkedin.png);
+}
+
+main{
+	float: left;
+	width: 85%;
 }
