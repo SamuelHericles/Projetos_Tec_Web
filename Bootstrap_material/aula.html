@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="font/css/open-iconic-bootstrap.css">
+        <style type="text/css">
+            .card{
+                width:400px;
+                left:30%;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div class="jumbotron" classe priopria para cabeçalho>
+            <div class="container">
+                    <h1 class="display-4">Ótima escolha!</h1>
+                    <p class="lead" >Obrigado por comprar em nossa loja!</p>
+            </div> 
+        </div>
+        <div class="container">
+            <div class="card">
+                <div class="card-header">
+                    <h2 >Sua compra</h2>
+                </div>
+                <div class="card-body">
+                    <strong>Qaskdfjgapçs:</strong>
+                    <img src="eu.jpg" class="img-thumbnail mb-3">
+                    <dl>
+                        <dt>Produto:<br></dt>
+                        <dd>Camiseta Reserva<br></dd>
+                        
+                        <dt>Cor:<br></dt>
+                        <dd>Verde<br></dd>
+                        
+                        <dt>Tamanho:<br></dt>
+                        <dd>40<br></dd>
+                        
+                        <dt>Preço:<br></dt>
+                        <dd>R$ 120,00<br></dd>
+
+                    </dl>
+                </div>
+            </div>
+        </div>
+        <form method="GET" action="text.html">
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+                    <div class="form-group">
+                        <label>Nome completo</label>
+                        <input type="text" class="form-control" name="nome" placeholder="Digite sue NOME COMPLETO">
+                    </div>
+                </fieldset>
+        </form>
+        <form method="GET" action="text.html">
+                <fieldset>
+                    <legend>Email</legend>
+                    <div class="form-group">
+                        <label>Email completo</label>
+                        <input type="text" class="form-control" name="nome" placeholder="Seu email">
+                    </div>
+                </fieldset>
+        </form>
+        <form method="GET" action="text.html">
+                <fieldset>
+                    <legend>CPF</legend>
+                    <div class="form-group">
+                        <label>CPF completo</label>
+                        <input type="text" class="form-control" name="nome" placeholder="000.000.00-00">
+                    </div>
+                </fieldset>
+        </form>
+        <p></p>
+        <form action="enviar.html" method="">
+            <label for="nome2">Nome:</label>  
+            <!--<input type="checkbox" name="nome" id="nome2" value="sim">
+            <label for="nome2">Aceito os termos</label>
+            -->
+
+            <input type="radio" name="idade" value="5">
+            <label> Menos 5 anos</label>
+
+            <input type="radio" name="idade" value="15">
+            <label> Menos 15 anos</label>
+
+            <input type="radio" name="idade" value="25">
+            <label> Menos 25 anos</label>
+            
+            <input type="text" name="campo">
+            <!--label for="test">asdfa</label>-->
+            <input type="image" name="botao" src="eu.jpg" width="20" height="20">
+            <input type="file" id ="test" name="anexo" >
+
+            <input type="hidden" name="codigo" value="abc45678">
+            <input type="button" name="mostrar" value="asdujgbap">
+            <input type="reset" name="reseta">
+            <textarea name="texto"></textarea>
+            <select name="cidades">
+                <option value="rj">Rio Janeiro</option>
+                <option value="sp">São Paulo</option>
+                <option value="ft">Fortaleza</option>
+
+                <optgroup label="Rio de Janeiro">
+                    <option value="sb">Sobral</option>
+                    <option value="ipu">Ipú</option>
+                    <option value="ft">Fortaleza</option>
+                </optgroup>
+
+            </select>
+            <input type="email" name="email">
+            <input type="number" max="100" step="10">
+            <input type="url" name="url">
+            <input type="range" name="volume">
+            <input type="date" name="validade">
+            <input type="color" name="cor">
+            <input type="search" name="pesquisa" results="10">
+            <input type="tel" name="telefone" placeholder="asdfkjs">
+            <input type="text" name="texto" autofocus list="cidades">
+            <datalist id="cidades">
+                    <option value="sb"></option>
+                    <option value="ipu"></option>
+                    <option value="ft"></option>
+            </datalist>
+            <input type="submit">
+        </form>
+        <span class="oi oi-thumb-up"></span>
+
+    </body>
+</html>
