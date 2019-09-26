@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style type="text/css">
+            h1{
+                /*text-shadow: 0 0 30px #00f;/*sombra em texto* left bottom cor|(0 0 5px)->sombra difusa 5px o quanto vai alcançar o objeto*/
+                background-image: linear-gradient(to bottom, #ff0352/*,#0000ff 90%*/,#568790);/*efeito de gradiente, indo do vermelhro para o azul depois para o azulado. O porcento é onde ele começa o grandiente da cor.*/
+                width: 100%;
+                background-size: 100%/*100% largura e altura*/ 5px;/*largura do elemnto do efeito dele, o grandiente ta se repetidindo a cada 5px*/
+                /*background-repeat: no-repeat;/*pra não repetir o efeito de gradiente de 5px*/
+            }
+            
+            h1:hover{
+                text-shadow: 0 0 5px gold;/*pra brilhar*/
+            }
+            .teste{
+                width: 100px;
+                height: 100px;
+                background-color: #00f;
+                /*box-shadow: 0 0 100px black;/*faz o mesmo, mas para elementos html*/
+                /*opacity: .3;/*opacidade do elemento, o quanto ficar transparente o elemento*/
+            }
+
+            .botao{
+                font-weight: bolder;
+                border: 5px solid purple;
+                background-color: white;
+                color: purple;
+                width: 100px;
+                margin-top: 30px;
+                padding: 5px;
+                text-align: center;
+                border-radius: 10px;
+            }
+            .botao:hover{/*pseudo classes, o hover é pra quando passar o mouse mudar o css do elemento*/
+                background-color: purple;
+                color: white;
+                position: relative;
+                /*right: 20px;*/
+            }
+            .botao:active{
+                background-color: red;
+            }
+
+            img{
+                transition: 1s;/*a trisção da img pro hover eh de 1 segundo*/
+            }
+
+            img:hover{
+                box-shadow: 0 0 0 9999999px rgb(0,0,0,.6);  /*99999px pro alcance do shadow, .8 no rgb e a transparecncia*/
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>Título da página</h1>
+        <div class="teste"></div>
+        <div href="www.google.com" class="botao">Clique aqui</div>
+        <img src="eu.jpg" alt="Joao da Silva">
+    </body>
+</html>

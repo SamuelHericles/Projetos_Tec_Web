@@ -56,9 +56,11 @@
         <form method="GET" action="text.html">
                 <fieldset>
                     <legend>Email</legend>
-                    <div class="form-group">
-                        <label>Email completo</label>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">@</span>
                         <input type="text" class="form-control" name="nome" placeholder="Seu email">
+                    </div>
                     </div>
                 </fieldset>
         </form>
@@ -69,7 +71,33 @@
                         <label>CPF completo</label>
                         <input type="text" class="form-control" name="nome" placeholder="000.000.00-00">
                     </div>
+                    <div class="form-group custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" name="aceito" value="sim" checked>
+                        <label class="custom-control-label" for="aceito">Desejo receber emails</label>
+                    </div>
+
                 </fieldset>
+                <fieldset>
+                    <legend>Cartão de crédito</legend>
+                    <div class="form-group">
+                        <label for="numero_cartao">Número do cartão</label>
+                        <input type="text" class="form-control" id="numero_cartao" name="numero">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Bandeira</label>
+                        <select class="custom-select" id="bandeira" >
+                        <option value="master">MasterCard</option>
+                        <option value="visa">VISA</option>
+                        <option value="amex">American Express</option>
+                    </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="validade">Validade</label>
+                        <input type="month" id="validade" class="form-control" name="validade">
+                    </div>
+                </fieldset>
+                <button type="submit" class="btn btn-primary mb-3"><span class="oi oi-thumb-up"></span> compra</button>
         </form>
         <p></p>
         <form action="enviar.html" method="">

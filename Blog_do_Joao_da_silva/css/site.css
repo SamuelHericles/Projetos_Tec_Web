@@ -13,7 +13,8 @@ body{
 	font-family: "Times New Roman", serif;
 	text-align: justify;
 	margin: 0px;
-	line-height: 150%
+	line-height: 150%;
+	background-color: #F2FFFC;
 }
 
 .fiat{
@@ -65,7 +66,9 @@ aside{
 
 h2 {
 	font-size: 30px;
+	font-weight: bold;
 	clear: both;
+	padding-top : 20px;
 }
 
 .titulo-aside{
@@ -79,6 +82,7 @@ h1{
 p {
 	text-align: justify;
 	margin:20px 0px;
+	font-family: 'Times New Roman', Times, serif;
 }
 
 strong {
@@ -111,7 +115,6 @@ title{
 }
 
 div{
-	width: 720px;
 	margin-left:auto;
 	margin-right:auto;
 }
@@ -120,7 +123,8 @@ div{
 	width: 720px;
 	margin-left: auto;
 	margin-right: auto;
-	padding-top: 10px
+	padding-top: 10px;
+	font-family:"Arial", sans-serif;
 }
 
 ul {
@@ -160,7 +164,22 @@ cite{
 	background-image: url(../imagens/linkedin.png);
 }
 
+.notice{
+	border-bottom : 1px solid #CCC;
+}
+
 main{
 	float: left;
 	width: 85%;
+}
+
+article a{
+	color: #851944;
+}
+
+.leia_mais{
+	margin: 15px;
+	padding: 10px;
+	text-align: center;
+	background-color: #ccc;
 }
