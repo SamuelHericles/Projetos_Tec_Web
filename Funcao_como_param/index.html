@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" onclick="ppp()">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app" class="container" name="principal">
+
+        <input onkeypress="clickar()"type="text" name="nome" >
+        <!--<button onclick="clickar()">ok</button>-->
+        <button onmouseover="clickar()">ok</button>
+        <button onmouseover="abrir()">OK</button>
+        
+    </div>
+
+
+    
+    <div id="test"></div>
+    <script>
+
+        if(navigator.cookieEnabled)
+            alert('Cookies ativados')
+        else
+            alert('Cookies desativado')    
+
+        /*
+            function exibe(){
+                console.log("olá")
+            }
+            setInterval(exibe,1000)
+        
+
+            var div = document.getElementById("app")//muito comum
+            var classe = document.getElementsByClassName("container")
+            var nome = document.getElementsByTagName("principal")//muito comum
+            console.log(nome)
+            console.log(div)
+            console.log(classe)
+
+        */
+
+        //mais flexível ->  querySelectors
+        //var divs = document.querySelector('#app')//body eh padrão
+       
+        var divs = document.querySelector('div')
+        console.log(divs)
+
+        var div_all = document.querySelectorAll('div')
+        console.log(div_all)
+
+        /*
+        function clickar(){
+            var ip = document.querySelector('input[name=nome]')
+            //console.log(ip)
+            var texto = ip.value
+            console.log(texto)
+        }*/
+
+        function clickar(){
+            var ip = document.querySelector('input[name=nome]')
+            ip.value="Bom dia"
+            console.log(value)
+        }
+
+        /*
+            Testar 
+            -> onblur     : perder o foco
+            -> onchage    : modificar o valor
+            -> onfocus    : perder o foco
+            -> onkeypress : teclar sobre um elemento
+            -> onload     : quando o elemento é carregado
+            -> onsubmit   : ação de enviar um formulário
+        
+        */
+
+        var count = 0
+        
+        function abrir(){
+            var ip = document.querySelector('input[name=nome]')
+            if(count==0){
+                window.open('http://www.google.com')
+                count = 1
+            }
+        }
+
+        
+        
+
+
+    </script>
+</body>
+</html>
